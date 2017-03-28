@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "12factor-config": "^1.3.1",
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babili": "^0.0.12",
+    "express": "^4.15.2",
+    "jsonfile": "^2.4.0",
+    "monzo-api": "^1.0.9"
+  },
+  "name": "monzo-get-transactions",
+  "version": "0.0.1",
+  "description": "Get Monzo Transactions",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "sh run.sh",
+    "dev": "babel-node --presets es2015,stage-2 -- src/app.js",
+    "build": "babel src -d dist --presets es2015,stage-2,babili"
+  },
+  "repository": "git@github.com:salomao-rodrigues/monzo-get-transactions.git",
+  "author": "Salomao Rodrigues <salomao88@gmail.com>",
+  "license": "MIT"
+}
